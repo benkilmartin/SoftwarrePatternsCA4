@@ -64,19 +64,6 @@
 
         >
 
-        <com.rey.material.widget.CheckBox
-            android:id="@+id/rme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/Material.Drawable.CheckBox"
-            android:text="Remember me"
-            android:textColor="@color/black"
-            app:cbd_strokeColor="@color/purple_200"
-            android:gravity="center_vertical"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginLeft="16dp"
-            />
 
         <TextView
             android:id="@+id/fpassword"
@@ -86,7 +73,7 @@
             android:textColor="@color/black"
             android:textSize="17sp"
             android:textStyle="bold"
-            android:layout_marginLeft="80dp"
+            android:layout_marginLeft="250dp"
 
 
             />
@@ -112,34 +99,6 @@
 
         android:textColor="@android:color/black"
         android:textSize="18sp" />
-
-
-    <TextView
-        android:id="@+id/adminpanel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lbtn"
-        android:layout_alignParentEnd="true"
-        android:layout_marginLeft="80dp"
-        android:layout_marginEnd="23dp"
-        android:text="I'm an Admin"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/notadminpanel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/lbtn"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginLeft="80dp"
-        android:text="I'm not an Admin"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:visibility="invisible" />
 
 
 </RelativeLayout>

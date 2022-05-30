@@ -1,4 +1,4 @@
-package com.example.softwarepatternsca4;
+package com.example.softwarepatternsca4.models;
 
 public class User {
 

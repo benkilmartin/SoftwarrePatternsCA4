@@ -8,6 +8,15 @@
         <entry key="..\:/Users/Ben/AndroidStudioProjects/app/src/main/res/layout/activity_login.xml" value="0.31354166666666666" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Ben/AndroidStudioProjects/app/src/main/res/layout/activity_register.xml" value="0.38385416666666666" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/app/src/main/res/layout/activity_shop_home.xml" value="0.2848731884057971" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/app/src/main/res/layout/app_bar_shop_home.xml" value="0.2848731884057971" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/app/src/main/res/layout/content_shop_home.xml" value="0.31354166666666666" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/app/src/main/res/layout/fragment_category.xml" value="0.37273550724637683" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/app/src/main/res/layout/fragment_home.xml" value="0.37273550724637683" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/app/src/main/res/layout/fragment_profile.xml" value="0.38385416666666666" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/app/src/main/res/layout/fragment_slideshow.xml" value="0.31354166666666666" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/app/src/main/res/layout/nav_header_shop_home.xml" value="0.38385416666666666" />
+        <entry key="..\:/Users/Ben/AndroidStudioProjects/app/src/main/res/menu/activity_main_drawer.xml" value="0.38385416666666666" />
       </map>
     </option>
   </component>

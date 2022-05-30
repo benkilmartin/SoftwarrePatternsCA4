@@ -18,10 +18,10 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class loginActivity extends AppCompatActivity {
 
-
+    private String pdbName = "Users";
     private EditText email, password;
     private Button loginButton;
-    private TextView AdminLink, NotAdminLink;
+    private TextView adminPanel, notadminPanel;
     private FirebaseAuth firebaseAuth;
 
 
@@ -30,11 +30,11 @@ public class loginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
+
         email = findViewById(R.id.lemail);
         password = findViewById(R.id.lpassword);
         loginButton = findViewById(R.id.lbtn);
-        AdminLink = findViewById(R.id.adminpanel);
-        NotAdminLink = findViewById(R.id.notadminpanel);
         firebaseAuth = FirebaseAuth.getInstance();
 
         loginButton.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +56,7 @@ public class loginActivity extends AppCompatActivity {
                                 if(qemail.equalsIgnoreCase("admin@gmail.com")){
                                     startActivity(new Intent(loginActivity.this, loginActivity.class));
                                 }else{
-                                    startActivity(new Intent(loginActivity.this, loginActivity.class));
+                                    startActivity(new Intent(loginActivity.this, ShopHome.class));
                                 }
                             }else{
                                 Toast.makeText(getApplicationContext(), "Username and/or password not recognised", Toast.LENGTH_SHORT).show();
