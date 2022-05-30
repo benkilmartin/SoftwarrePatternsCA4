@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.softwarepatternsca4.R;
 import com.example.softwarepatternsca4.models.Item;
 
@@ -27,7 +28,9 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
+        Glide.with(context).load(ItemModelList.get(position).getTitle()).into(holder.img);
+        holder.name.setText(ItemModelList.get(position).getTitle());
+        holder.desc.setText(ItemModelList.get(position).getCategory());
     }
 
     @Override
