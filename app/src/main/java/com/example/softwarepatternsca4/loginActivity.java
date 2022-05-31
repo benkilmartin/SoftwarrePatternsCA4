@@ -53,8 +53,8 @@ public class loginActivity extends AppCompatActivity {
 
                             if(task.isSuccessful()){
                                 // checkVerification();
-                                if(qemail.equalsIgnoreCase("admin@gmail.com")){
-                                    startActivity(new Intent(loginActivity.this, loginActivity.class));
+                                if(qemail.equalsIgnoreCase("administrator@gmail.com")&&qpassword.equalsIgnoreCase("password")){
+                                    startActivity(new Intent(loginActivity.this, AdminPanel.class));
                                 }else{
                                     startActivity(new Intent(loginActivity.this, ShopHome.class));
                                 }

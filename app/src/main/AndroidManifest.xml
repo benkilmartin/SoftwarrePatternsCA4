@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SoftwarePatternsCA4">
         <activity
+            android:name=".AdminPanel"
+            android:exported="false" />
+        <activity
             android:name=".ShopHome"
             android:exported="true"
             android:label="@string/title_activity_shop_home"
