@@ -24,13 +24,16 @@
             android:theme="@style/Theme.SoftwarePatternsCA4.NoActionBar" />
         <activity
             android:name=".RegisterActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.SoftwarePatternsCA4.NoActionBar"/>
         <activity
             android:name=".loginActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.SoftwarePatternsCA4.NoActionBar"/>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.SoftwarePatternsCA4.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
