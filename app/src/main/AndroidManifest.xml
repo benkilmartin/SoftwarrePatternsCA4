@@ -10,8 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SoftwarePatternsCA4">
         <activity
+            android:name=".AdminPanelAddItem"
+            android:exported="false"
+            android:theme="@style/Theme.SoftwarePatternsCA4.NoActionBar"/>
+        <activity
             android:name=".AdminPanel"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.SoftwarePatternsCA4.NoActionBar"/>
         <activity
             android:name=".ShopHome"
             android:exported="true"

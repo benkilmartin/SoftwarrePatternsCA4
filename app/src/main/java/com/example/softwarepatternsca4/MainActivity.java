@@ -6,10 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
 {
-    private Button joinNowButton, loginButton;
+    private RelativeLayout joinNowButton, loginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -17,8 +19,8 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        joinNowButton = findViewById(R.id.main_join_now_btn);
-        loginButton = findViewById(R.id.main_login_btn);
+        joinNowButton = findViewById(R.id.sigmupmain);
+        loginButton = findViewById(R.id.loginmain);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override

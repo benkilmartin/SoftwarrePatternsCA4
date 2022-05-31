@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,7 +21,7 @@ public class loginActivity extends AppCompatActivity {
 
     private String pdbName = "Users";
     private EditText email, password;
-    private Button loginButton;
+    private RelativeLayout loginButton;
     private TextView adminPanel, notadminPanel;
     private FirebaseAuth firebaseAuth;
 
@@ -53,7 +54,7 @@ public class loginActivity extends AppCompatActivity {
 
                             if(task.isSuccessful()){
                                 // checkVerification();
-                                if(qemail.equalsIgnoreCase("administrator@gmail.com")&&qpassword.equalsIgnoreCase("password")){
+                                if(qemail.equalsIgnoreCase("administrator@gmail.com")){
                                     startActivity(new Intent(loginActivity.this, AdminPanel.class));
                                 }else{
                                     startActivity(new Intent(loginActivity.this, ShopHome.class));

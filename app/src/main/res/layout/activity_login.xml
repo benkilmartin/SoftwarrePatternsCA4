@@ -13,9 +13,9 @@
         android:layout_width="300dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="150dp"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/undraw_shopping_app_flsj" />
+        android:src="@drawable/loginimage" />
 
     <EditText
         android:id="@+id/lemail"
@@ -45,7 +45,7 @@
         android:layout_marginRight="15dp"
         android:background="@drawable/input_design"
         android:hint="Password"
-        android:inputType="text"
+        android:inputType="textPassword"
         android:padding="20dp"
         android:textColor="@color/purple_200"
         android:textColorHint="@color/black"
@@ -53,7 +53,7 @@
         android:textStyle="bold"
 
         />
-    
+
     <LinearLayout
         android:id="@+id/linear_layout_1"
         android:layout_width="match_parent"
@@ -81,24 +81,27 @@
 
     </LinearLayout>
 
-    <Button
+    <RelativeLayout
         android:id="@+id/lbtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_below="@+id/linear_layout_1"
-        android:layout_marginStart="15dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginRight="15dp"
-        android:background="@drawable/buttons"
-        android:padding="17dp"
-        android:text="LOGIN"
-        android:textAlignment="center"
-        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_corner">
 
-        android:textColor="@android:color/black"
-        android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"></TextView>
+    </RelativeLayout>
 
 
 </RelativeLayout>

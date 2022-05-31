@@ -18,155 +18,95 @@ public class AdminPanel extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_category);
+        setContentView(R.layout.activity_admin_panel);
 
+        tShirts = findViewById(R.id.t_shirts);
+        sportsTShirts = findViewById(R.id.sports_t_shirts);
+        femaleDresses = findViewById(R.id.female_dresses);
+        sweathers = findViewById(R.id.sweathers);
 
-        tShirts = (ImageView) findViewById(R.id.t_shirts);
-        sportsTShirts = (ImageView) findViewById(R.id.sports_t_shirts);
-        femaleDresses = (ImageView) findViewById(R.id.female_dresses);
-        sweathers = (ImageView) findViewById(R.id.sweathers);
+        glasses = findViewById(R.id.glasses);
+        hatsCaps = findViewById(R.id.hats_caps);
+        walletsBagsPurses = findViewById(R.id.purses_bags_wallets);
+        shoes = findViewById(R.id.shoes);
 
-        glasses = (ImageView) findViewById(R.id.glasses);
-        hatsCaps = (ImageView) findViewById(R.id.hats_caps);
-        walletsBagsPurses = (ImageView) findViewById(R.id.purses_bags_wallets);
-        shoes = (ImageView) findViewById(R.id.shoes);
-
-        headPhonesHandFree = (ImageView) findViewById(R.id.headphones_handfree);
-        Laptops = (ImageView) findViewById(R.id.laptop_pc);
-        watches = (ImageView) findViewById(R.id.watches);
-        mobilePhones = (ImageView) findViewById(R.id.mobilephones);
+        headPhonesHandFree = findViewById(R.id.headphones_handfree);
+        Laptops = findViewById(R.id.laptop_pc);
+        watches = findViewById(R.id.watches);
+        mobilePhones = findViewById(R.id.mobilephones);
 
 
         tShirts.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminPanel.this, AdminAddNewProductActivity.class);
-                intent.putExtra("category", "tShirts");
-                startActivity(intent);
+            public void onClick(View view){
+                startActivity(new Intent(AdminPanel.this, AdminPanelAddItem.class).putExtra("category", "tShirts"));
             }
         });
-
-
         sportsTShirts.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminPanel.this, AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Sports tShirts");
-                startActivity(intent);
+            public void onClick(View view){
+                startActivity(new Intent(AdminPanel.this, AdminPanelAddItem.class).putExtra("category", "Sports tShirts"));
             }
         });
-
-
         femaleDresses.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminPanel.this, AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Female Dresses");
-                startActivity(intent);
+            public void onClick(View view){
+                startActivity(new Intent(AdminPanel.this, AdminPanelAddItem.class).putExtra("category", "Female Dresses"));
             }
         });
-
-
         sweathers.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminPanel.this, AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Sweathers");
-                startActivity(intent);
+            public void onClick(View view){
+                startActivity(new Intent(AdminPanel.this, AdminPanelAddItem.class).putExtra("category", "Sweathers"));
             }
         });
-
-
         glasses.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminPanel.this, AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Glasses");
-                startActivity(intent);
+            public void onClick(View view){
+                startActivity(new Intent(AdminPanel.this, AdminPanelAddItem.class).putExtra("category", "Glasses"));
             }
         });
-
-
         hatsCaps.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminPanel.this, AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Hats Caps");
-                startActivity(intent);
+            public void onClick(View view){
+                startActivity(new Intent(AdminPanel.this, AdminPanelAddItem.class).putExtra("category", "Hats Caps"));
             }
         });
-
-
-
         walletsBagsPurses.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                startActivity(new Intent(AdminPanel.this, AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Wallets Bags Purses");
-                startActivity(intent);
+            public void onClick(View view){
+                startActivity(new Intent(AdminPanel.this, AdminPanelAddItem.class).putExtra("category", "Wallets Bags Purses"));
             }
         });
-
-
         shoes.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                startActivity(new Intent(AdminPanel.this, AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Shoes");
-                startActivity(intent);
+            public void onClick(View view){
+                startActivity(new Intent(AdminPanel.this, AdminPanelAddItem.class).putExtra("category", "Shoes"));
             }
         });
-
-
-
         headPhonesHandFree.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                startActivity(new Intent(AdminPanel.this, AdminAddNewProductActivity.class);
-                intent.putExtra("category", "HeadPhones HandFree");
-                startActivity(intent);
+            public void onClick(View view){
+                startActivity(new Intent(AdminPanel.this, AdminPanelAddItem.class).putExtra("category", "HeadPhones HandFree"));
             }
         });
-
-
         Laptops.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                startActivity(new Intent((AdminPanel.this, AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Laptops");
-                startActivity(intent);
+            public void onClick(View view){
+                startActivity(new Intent(AdminPanel.this, AdminPanelAddItem.class).putExtra("category", "Laptops"));
             }
         });
-
-
         watches.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminPanel.this, AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Watches");
-                startActivity(intent);
+            public void onClick(View view){
+                startActivity(new Intent(AdminPanel.this, AdminPanelAddItem.class).putExtra("category", "Watches"));
             }
         });
-
-
         mobilePhones.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(AdminPanel.this, AdminAddNewProductActivity.class);
-                intent.putExtra("category", "Mobile Phones");
-                startActivity(intent);
+            public void onClick(View view){
+                startActivity(new Intent(AdminPanel.this, AdminPanelAddItem.class).putExtra("category", "Mobile Phones"));
             }
         });
+    }
 }

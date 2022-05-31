@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.example.softwarepatternsca4.models.User;
@@ -25,7 +26,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class RegisterActivity extends AppCompatActivity {
 
     private EditText signupUsername,signupEmail,signupPassword,signupConfirmPassword;
-    private Button registerButton;
+    private RelativeLayout registerButton;
 
 
     private FirebaseAuth firebaseAuth;

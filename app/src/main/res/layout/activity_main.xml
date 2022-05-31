@@ -12,10 +12,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
         android:text="Welcome"
-        android:layout_marginTop="50dp"
         android:textAlignment="center"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/purple_200"
         android:textSize="42sp">
 
     </TextView>
@@ -25,45 +28,53 @@
         android:layout_width="300dp"
         android:layout_height="200dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
-        android:src="@drawable/undraw_shopping_app_flsj" />
+        android:layout_marginTop="100dp"
+        android:src="@drawable/shopping" />
 
-    <Button
-        android:id="@+id/main_login_btn"
+
+    <RelativeLayout
+        android:id="@+id/sigmupmain"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/buttons"
-        android:padding="20dp"
-        android:text="Customer Login"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/app_logo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_corner">
 
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:text="Sign Up Now"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"></TextView>
+    </RelativeLayout>
 
-    <Button
-        android:id="@+id/main_join_now_btn"
+    <RelativeLayout
+        android:id="@+id/loginmain"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/main_login_btn"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/input_design"
-        android:padding="20dp"
-        android:text="Sign Up!"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/sigmupmain"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_corner">
 
-        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"></TextView>
+    </RelativeLayout>
 
 
 </RelativeLayout>
